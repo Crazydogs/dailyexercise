@@ -1,0 +1,81 @@
+<html>
+<head>
+	<style>
+	.breathe_button{
+	  width:200px;
+	  height:200px;
+	  position:relative;
+	  text-align:center;
+	}
+	.breathe_button_bg{
+	  position:absolute;
+	  width:160px;
+	  height:160px;
+	  border:20px solid #eaeaea;
+	  border-radius:100%;
+	}
+	.breathe_button_main{
+	  position:absolute;
+	  width:160px;
+	  height:160px;
+	  top:20px;
+	  left:20px;
+	  border-radius:100%;
+	  background:-o-radial-gradient(center center,circle,#1981f5 80px,rgba(234,234,234,0) 90px);
+	  background:-ms-radial-gradient(center center,circle,#1981f5 80px,rgba(234,234,234,0) 90px);
+	  background:-moz-radial-gradient(center center,circle,#1981f5 80px,rgba(234,234,234,0) 90px);
+	  background:-webkit-radial-gradient(center center,circle,#1981f5 80px,rgba(234,234,234,0) 90px);
+	  vertical-align:middle;
+	}
+	.breathe_button_main:hover{
+	  animation:breathe 2s linear infinite;
+	  -ms-animation:breathe 2s linear infinite;
+	  -moz-animation:breathe 2s linear infinite;
+	  -webkit-animation:breathe 2s linear infinite;
+	}
+	.breathe_button span{
+	  color:white;
+	  font-size:30px;
+	  line-height:200px;
+	  font-family:"Lucida Handwriting";
+	  position:relative;
+	}
+	@keyframes breathe{
+	  0%{width:160px;height:160px;top:20px;left:20px;}
+	  30%{width:200px;height:200px;top:0px;left:0px;}
+	  50%{width:200px;height:200px;top:0px;left:0px;}
+	  80%{width:160px;height:160px;top:20px;left:20px;}
+	  100%{width:160px;height:160px;top:20px;left:20px;}
+	}
+	@-ms-keyframes breathe{
+	  0%{width:160px;height:160px;top:20px;left:20px;}
+	  30%{width:200px;height:200px;top:0px;left:0px;}
+	  50%{width:200px;height:200px;top:0px;left:0px;}
+	  80%{width:160px;height:160px;top:20px;left:20px;}
+	  100%{width:160px;height:160px;top:20px;left:20px;}
+	}
+	@-moz-keyframes breathe{
+	  0%{width:160px;height:160px;top:20px;left:20px;}
+	  30%{width:200px;height:200px;top:0px;left:0px;}
+	  50%{width:200px;height:200px;top:0px;left:0px;}
+	  80%{width:160px;height:160px;top:20px;left:20px;}
+	  100%{width:160px;height:160px;top:20px;left:20px;}
+	}
+	@-webkit-keyframes breathe{
+	  0%{width:160px;height:160px;top:20px;left:20px;}
+	  30%{width:200px;height:200px;top:0px;left:0px;}
+	  60%{width:160px;height:160px;top:20px;left:20px;}
+	  100%{width:160px;height:160px;top:20px;left:20px;}
+	}
+	</style>
+</head>
+<body>
+<div style="width:200px;height:200px">
+  <div class="breathe_button">
+    <div class="breathe_button_bg"></div>
+    <div class="breathe_button_main">
+    </div>
+    <span>Breathe</span>
+  </div>
+</div>
+</body>
